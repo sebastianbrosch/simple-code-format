@@ -1,0 +1,36 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+code#code-formatted {
+    box-sizing: border-box;
+    display: table-cell;
+    font-size: 4em;
+    height: 1350px;
+    max-height: 1350px;
+    max-width: 1080px;
+    overflow: hidden;
+    padding: 1em;
+    vertical-align: middle;
+    width: 1080px;
+}
+pre {
+    display: inline-block;
+    height: 1350px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 1080px;
+    zoom: 0.7;
+}
+div.controls {
+    display: inline-block;
+    position: fixed;
+    left: 790px;
+    top: 20px;
+}
+div.controls textarea {
+    display: block;
+    height: 200px;
+    width: 500px;
+}
