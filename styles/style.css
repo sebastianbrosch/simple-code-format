@@ -21,12 +21,12 @@ pre {
     overflow: hidden;
     padding: 0;
     width: 1080px;
-    zoom: 0.7;
+    zoom: 0.6;
 }
 div.controls {
     display: inline-block;
     position: fixed;
-    left: 790px;
+    left: 700px;
     top: 20px;
 }
 div.controls textarea {
