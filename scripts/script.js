@@ -7,8 +7,13 @@ $(document).ready(function() {
     });
 
     //load the content of the textarea to the formatted area on every change.
-    $('#code-input').on('input', function(e) {
+    $('#code-input').on('input', function() {
         ReloadCodeContent();
+    });
+
+    //get the current size of the font after changing the slider.
+    $('#range-text-size').on('input', function() {
+        $('#code-formatted').attr('style', 'font-size: ' + $(this).val() + 'em');
     });
 
     //get the language of the current selection after change.

@@ -32,5 +32,9 @@ div.controls {
 div.controls textarea {
     display: block;
     height: 200px;
+    margin: 10px 0;
     width: 500px;
+}
+div.controls button {
+    float: right;
 }
