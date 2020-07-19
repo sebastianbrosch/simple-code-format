@@ -32,19 +32,30 @@ $(document).ready(function() {
         html2canvas($("#code-formatted").get(0), {'logging': false}).then(canvas => {
             var itemHyperlink = document.createElement("a");
             itemHyperlink.href = canvas.toDataURL('image/png');
-            itemHyperlink.setAttribute("download", 'code.png');
+            itemHyperlink.setAttribute("download", 'code' + Date.now() + '.png');
             itemHyperlink.click();
         });
     });
 });
 
+/**
+ * function to reload the content and highlight the code.
+ */
 function ReloadCodeContent() {
     $('pre code#code-formatted').text($('#code-input').val());
     hljs.highlightBlock($('pre code#code-formatted').get(0));
 }
+
+/**
+ * function to set the selected language for syntax highlightning.
+ */
 function SetCurrentLanguage() {
     $('pre code#code-formatted').attr('class', 'lang-' + ($('select#select-language').find('option:selected').val() || ''));
 }
+
+/**
+ * function to reload the view after changes on font size or image size.
+ */
 function ReloadView() {
     
     //get the image size from the select.
