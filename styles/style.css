@@ -38,3 +38,15 @@ div.controls textarea {
 div.controls button {
     float: right;
 }
+textarea#code-input {
+    border: 1px solid #444;
+}
+button#image-download {
+    border: 1px solid #444;
+    padding: 5px;
+}
+select#select-language,
+select#select-image-size {
+    border: 1px solid #444;
+    padding: 5px;
+}
